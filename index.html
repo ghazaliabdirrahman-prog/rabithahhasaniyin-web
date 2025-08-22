@@ -1,12 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rabithah Hasaniyin</title>
+  <title>Rabithah Hasaniyin </title>
+  <link rel="icon" type="image/png" href="logowab.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("latarbelakang.png") no-repeat center center fixed;
+      background-size: contain; 
+    }
+
+    /* ANIMASI FADE-IN */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* HEADER */
+    header {
+      background: #4cec027a;
+      color: rgb(20, 1, 1);
+      padding: 10px;
+      text-align: center;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    nav {
+      background: #0066cc;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffdd00;
+    }
+
+    /* KONTEN */
+    main {
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .card:nth-child(2) {
+      animation-delay: 0.5s; /* biar muncul bergantian */
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      animation: fadeInUp 1.8s ease-in-out;
+    }
+
+    /* TOMBOL KEREN */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #007bff, #00d4ff);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #0056b3, #0099cc);
+      transform: scale(1.08);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #160401;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      animation: fadeInUp 2.2s ease-in-out;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Selamat datang di website Rabithah Hasaniyin</h1>
-  <p>Website ini sudah aktif dengan GitHub Pages 🎉</p>
+  <header>
+    <h1>رابته حسنين</h1>
+    <h1>أهل البيت سيدنا الحسين</h1>
+  </header>
+
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kontak</a>
+    <a href="#">alamat</a>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Selamat Datang</h2>
+      <p>Ini adalah website pertama saya. Sekarang sudah ada gambar, tombol keren 🎉, dan animasi!</p>
+      <a href="#" class="btn">Klik di Sini</a>
+    </div>
+
+    <div class="card">
+      <h2>Artikel Singkat</h2>
+      <p>Website ini punya layout sederhana: ada header, menu navigasi, isi konten, dan footer. Plus sekarang lebih hidup dengan animasi fade-in.</p>
+      <a href="#" class="btn">Baca Selengkapnya</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Website Saya - Semua Hak Dilindungi</p>
+  </footer>
 </body>
 </html>
